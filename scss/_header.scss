@@ -1,0 +1,44 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fffffe;
+    nav {
+        .navPadding{
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            .logoNav{
+                margin-left: 11vw;
+                height: $heigthLogoNav;
+            }
+        }
+        ul{
+            margin-left: 15%;
+            li .navSeccion{
+                font-size: 1.4rem;
+                color: $colorCeleste !important;
+                &:visited{
+                    font-size: 1.4rem;
+                    color: $colorCeleste !important;
+                }
+                &:hover{
+                    color: $colorVerde !important;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 488px){
+    header{
+        nav{
+            .navPadding{
+                .logoNav{
+                height: $heigthLogoNav * .65;
+                }
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Colores
+$colorGris: #e7e3e3;
+$colorCeleste: #00a0de;
+$colorVerde: #A0CE4E;
+
+//Medidas
+//alto del logo menu navegacion.
+$heigthLogoNav: 7rem;
+// padding general para secciones y titulos. 
+$espaciado: 1.4rem; 
+
+// Estilo para campos de formularios
+@mixin campoFormulario($height) {
+    width: 100%;
+    height: $height;
+    border: black solid .1rem;
+    border-radius: .3rem; 
+}
+//Estilo para las imagenes del index
+@mixin estiloImgIndex() {
+    width: 30rem;   
+    border: 3px $colorCeleste outset;
+    border-radius: .6rem;
+    padding: 1px;
+    max-width: 80vw
+}
+//Estilo para los botones
+@mixin botones($width) {
+    width: $width;
+    height: 2rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: solid #000000 2px;
+    border-radius: .4rem;
+}

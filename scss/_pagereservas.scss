@@ -1,0 +1,91 @@
+@mixin gridFormulario($grid) {
+    grid-area: $grid;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: .7rem;
+}
+
+.paginaReservas{
+    background-color: $colorCeleste;
+    .contenedorForm{
+        display: flex;
+        justify-content: center;
+        max-width: 85vw;
+        margin: 0 auto;
+        .formReserva{
+            width: 35rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, auto);
+            grid-template-areas: 
+                "name name name"
+                "tel tel tel"
+                "mail mail mail"
+                "cancha dia hora"
+                "terms terms terms"
+                "boton boton boton";
+            .formReserva__nombre{
+                @include gridFormulario(name);
+            }
+            .formReserva__tel{
+                @include gridFormulario(tel);
+            }
+            .formReserva__email{
+                @include gridFormulario(mail);
+            }
+            .formReserva__cancha{
+                @include gridFormulario(cancha);          
+            }
+            .formReserva__dia{
+                @include gridFormulario(dia);
+            }
+            .formReserva__hora{
+                @include gridFormulario(hora);
+            }
+            .formReserva__terms{
+                grid-area: terms;
+                margin-bottom: .7rem;
+            }
+            .formReserva__boton{
+                @include gridFormulario(boton);
+                .formReserva__botonEstilo{
+                    @include botones(9rem);
+                }
+            }
+            .formReserva__input{
+                @include campoFormulario(2rem);
+            }  
+        }
+    }
+    .paginaReservas__condiciones{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        max-width: 85vw;
+        margin: 0 auto;
+    }
+}
+
+.precios{
+    display: column;
+    flex-flow: row nowrap;
+    padding-bottom: 2rem;
+    .precios__tabla{
+        background-color: #000000;
+        color: #c0bebe;
+        margin: 0 auto;
+        max-width: 85vw;
+        text-align: center;
+        margin-bottom: 1rem;
+        border: solid 0.1px $colorGris;
+        tr{
+            th{
+                width: 10rem;
+                border-bottom: solid 0.1px $colorGris;
+            }
+        }
+    }
+}
+

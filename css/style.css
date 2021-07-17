@@ -1,0 +1,379 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fffffe; }
+  header nav .navPadding {
+    padding-top: 0rem;
+    padding-bottom: 0rem; }
+    header nav .navPadding .logoNav {
+      margin-left: 11vw;
+      height: 7rem; }
+  header nav ul {
+    margin-left: 15%; }
+    header nav ul li .navSeccion {
+      font-size: 1.4rem;
+      color: #00a0de !important; }
+      header nav ul li .navSeccion:visited {
+        font-size: 1.4rem;
+        color: #00a0de !important; }
+      header nav ul li .navSeccion:hover {
+        color: #A0CE4E !important; }
+
+@media only screen and (max-width: 488px) {
+  header nav .navPadding .logoNav {
+    height: 4.55rem; } }
+
+.fotoHome {
+  height: 24rem;
+  width: 100%;
+  background-image: url(../imagenes/foto-pelota.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.sectPredio .sectPredio__flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2.1rem;
+  max-width: 90vw;
+  margin: 0 auto; }
+  .sectPredio .sectPredio__flex .sectPredio__derecha {
+    order: 2;
+    width: 30rem;
+    max-width: 80vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem; }
+  .sectPredio .sectPredio__flex .sectPredio__izquierda {
+    order: 1;
+    width: 30rem;
+    max-width: 80vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem; }
+    .sectPredio .sectPredio__flex .sectPredio__izquierda .sectPredio__img {
+      width: 30rem;
+      border: 3px #00a0de outset;
+      border-radius: .6rem;
+      padding: 1px;
+      max-width: 80vw; }
+
+.sectReservas {
+  background-color: #00a0de; }
+  .sectReservas .sectReservas__link {
+    width: 75vw;
+    margin: 0 auto; }
+  .sectReservas .sectReservas__flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+    .sectReservas .sectReservas__flex .sectReservas__icono {
+      width: 9rem; }
+
+.sectTorneos .sectTorneos__flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2.1rem;
+  max-width: 90vw;
+  margin: 0 auto; }
+  .sectTorneos .sectTorneos__flex .sectTorneos__izquierda {
+    order: 1;
+    width: 30rem;
+    max-width: 80vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem; }
+    .sectTorneos .sectTorneos__flex .sectTorneos__izquierda .sectTorneos__parrafo {
+      text-align: justify; }
+  .sectTorneos .sectTorneos__flex .sectTorneos__derecha {
+    order: 2;
+    width: 30rem;
+    max-width: 80vw;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem; }
+    .sectTorneos .sectTorneos__flex .sectTorneos__derecha .sectTorneos__img {
+      width: 30rem;
+      border: 3px #00a0de outset;
+      border-radius: .6rem;
+      padding: 1px;
+      max-width: 80vw; }
+
+.sectContacto {
+  background-color: #00a0de; }
+  .sectContacto .sectContacto__flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2.1rem;
+    max-width: 90vw;
+    margin: 0 auto; }
+    .sectContacto .sectContacto__flex .sectContacto__ubicacion {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-left: 1.3rem;
+      margin-right: 1.3rem; }
+      .sectContacto .sectContacto__flex .sectContacto__ubicacion .sectContacto__mapa {
+        border-radius: .3rem;
+        max-width: 80vw; }
+    .sectContacto .sectContacto__flex .sectContacto__mensaje {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      padding-bottom: 1.4rem;
+      margin-left: 1.3rem;
+      margin-right: 1.3rem; }
+      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid {
+        display: grid;
+        grid-template-columns: 5rem 18rem;
+        grid-template-rows: auto; }
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid .sectContacto__input {
+          width: 100%;
+          height: 90%;
+          border: black solid .1rem;
+          border-radius: .3rem; }
+      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__textarea {
+        width: 100%;
+        height: 10rem;
+        border: black solid .1rem;
+        border-radius: .3rem; }
+      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__boton {
+        width: 7rem;
+        height: 2rem;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        border: solid #000000 2px;
+        border-radius: .4rem; }
+      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__datos {
+        font-weight: lighter;
+        font-size: 1.4rem;
+        font-family: 'Archivo Narrow', sans-serif;
+        color: black;
+        margin: 0;
+        padding: 0; }
+
+@media only screen and (max-width: 488px) {
+  .fotoHome {
+    height: 12rem; }
+  .sectPredio .sectPredio__flex .sectPredio__derecha {
+    padding-top: 1rem; }
+  .sectReservas h2, .sectReservas h3 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.7rem; }
+  .sectReservas .sectReservas__link a {
+    color: #A0CE4E; }
+  .sectReservas .sectReservas__icono {
+    display: none; }
+  .sectContacto .sectContacto__flex .sectContacto__mensaje {
+    padding-bottom: 0rem; }
+    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid {
+      grid-template-columns: 30% 70%;
+      width: 80vw; }
+    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__boton {
+      width: 4.25rem;
+      height: 1.5rem;
+      font-size: .8rem;
+      border: solid #000000 1px; }
+    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__datos {
+      font-size: 1rem; } }
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.3rem;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.52); }
+  footer h5 {
+    margin-bottom: 0rem; }
+  footer .redes {
+    width: 1.8rem;
+    margin: 0rem .25rem 0rem .25rem; }
+  footer p {
+    font-size: 1rem;
+    margin: 0; }
+
+@media only screen and (max-width: 488px) {
+  footer h5 {
+    font-size: .9rem; }
+  footer .redes {
+    width: 1.2rem; }
+  footer p {
+    font-size: .8rem; } }
+
+.paginaReservas {
+  background-color: #00a0de; }
+  .paginaReservas .contenedorForm {
+    display: flex;
+    justify-content: center;
+    max-width: 85vw;
+    margin: 0 auto; }
+    .paginaReservas .contenedorForm .formReserva {
+      width: 35rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas: "name name name" "tel tel tel" "mail mail mail" "cancha dia hora" "terms terms terms" "boton boton boton"; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__nombre {
+        grid-area: name;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__tel {
+        grid-area: tel;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__email {
+        grid-area: mail;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__cancha {
+        grid-area: cancha;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__dia {
+        grid-area: dia;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__hora {
+        grid-area: hora;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__terms {
+        grid-area: terms;
+        margin-bottom: .7rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__boton {
+        grid-area: boton;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: .7rem; }
+        .paginaReservas .contenedorForm .formReserva .formReserva__boton .formReserva__botonEstilo {
+          width: 9rem;
+          height: 2rem;
+          font-family: 'Archivo Narrow', sans-serif;
+          font-size: 1rem;
+          font-weight: bold;
+          border: solid #000000 2px;
+          border-radius: .4rem; }
+      .paginaReservas .contenedorForm .formReserva .formReserva__input {
+        width: 100%;
+        height: 2rem;
+        border: black solid .1rem;
+        border-radius: .3rem; }
+  .paginaReservas .paginaReservas__condiciones {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 85vw;
+    margin: 0 auto; }
+
+.precios {
+  display: column;
+  flex-flow: row nowrap;
+  padding-bottom: 2rem; }
+  .precios .precios__tabla {
+    background-color: #000000;
+    color: #c0bebe;
+    margin: 0 auto;
+    max-width: 85vw;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: solid 0.1px #e7e3e3; }
+    .precios .precios__tabla tr th {
+      width: 10rem;
+      border-bottom: solid 0.1px #e7e3e3; }
+
+.sectImagenes {
+  background-color: #00a0de; }
+  .sectImagenes .sectImagenes__carousel {
+    width: 60rem;
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 2.1rem; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-padding-top: 8rem; }
+
+body {
+  background-color: #e7e3e3; }
+
+ul li, ol li {
+  list-style: none; }
+
+ol, ul {
+  padding-left: 0rem; }
+
+.hiden {
+  display: none; }
+
+a, a:visited {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: #A0CE4E !important; }
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: 'Ropa Sans', sans-serif;
+  color: #000000;
+  margin: 0; }
+
+h2, h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Ropa Sans', sans-serif;
+  color: #000000;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin: 0; }
+
+.textoGeneral {
+  font-size: 1.4rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #000000; }
+
+/* Media Queries */
+@media only screen and (min-width: 1800px) {
+  body {
+    width: 75vw;
+    margin: 0 auto; } }
+
+@media only screen and (max-width: 488px) {
+  html {
+    scroll-padding-top: 5.55rem; }
+  .textoGeneral {
+    font-size: 1rem; }
+  h1 {
+    font-size: 1.7rem; }
+  h2, h3 {
+    font-size: 1.3rem; } }

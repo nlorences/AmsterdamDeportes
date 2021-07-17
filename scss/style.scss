@@ -1,0 +1,83 @@
+@import "variables";
+@import "header";
+@import "indexmain";
+@import "footer";
+@import "pagereservas";
+@import "carousel";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//Padding scroll tamaño logo+padding del nav bootstrap.
+html{
+    scroll-padding-top: $heigthLogoNav + 1rem;
+}
+//Estilos generales para todas las paginas
+body{
+    background-color: $colorGris;
+}
+ul li, ol li{
+    list-style: none;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.hiden{
+    display: none;
+}
+a, a:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: $colorVerde!important;
+}
+h1{
+    text-align: center;
+    font-size: 2.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #000000;
+    margin: 0;
+}   
+h2, h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #000000;
+    padding-top: $espaciado;
+    padding-bottom: $espaciado;
+    margin: 0;
+}
+.textoGeneral{
+    font-size: 1.4rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #000000;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 1800px){
+    body{
+        width: 75vw;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 488px){
+    html{
+        scroll-padding-top: $heigthLogoNav*.65 + 1rem;
+    }
+    .textoGeneral{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    h2, h3{
+        font-size: 1.3rem;
+    }
+
+}

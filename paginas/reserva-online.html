@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css propio -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="http://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Link Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Ropa+Sans&display=swap" rel="stylesheet">   
+
+    <title>Amsterdam Deportes Reservas cancha futbol tenis y paddle.</title>
+    <meta name="description" content="Reserva de canchas de futbol tenis y paddle Buenos Aires.">
+    <meta name="keywords" content="FUTBOL, FUTBOL 5, FUTBOL 8, TENIS, PADDLE, CANCHAS, BUENOS AIRES, TORNEOS, CESPED SINTETICO">
+</head>
+<body>
+    <header>
+        <!-- Menu de navegacion con Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand navPadding" href="../index.html">
+                    <img src="../imagenes/amsterdam_logo.png" alt="Logo Amsterdam Deportes" class="logoNav">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Enlaces Menu navegacion -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-3">
+                            <a class="nav-link navSeccion" aria-current="page" href="../index.html#sectionPredio">Predio</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link navSeccion" href="../index.html#sectionReservas">Reservas</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link navSeccion" href="../index.html#sectionTorneos">Torneos</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link navSeccion" href="../index.html#sectionContacto" tabindex="-1">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="paginaReservas">
+        <!--Seccion para reservas-->
+        <section id="sectionFormReservas" class="textoGeneral">
+            <h1>Hacé tu reserva Online</h1>
+            <!--Formulario de reservas-->
+            <div class="contenedorForm">
+                <form action="" class="formReserva">
+                    <div class="formReserva__nombre">
+                        <label for="nombre">Nombre</label>
+                        <input class="formReserva__input" type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="formReserva__tel">
+                        <label for="telefono">Teléfono</label>
+                        <input class="formReserva__input" type="number" name="telefono" id="telefono" required>
+                    </div>
+                    <div class="formReserva__email">
+                        <label for="email">Correo electrónico</label>
+                        <input class="formReserva__input" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="formReserva__cancha">
+                        <label for="cancha">Cancha</label>
+                        <select class="formReserva__input" name="cancha">
+                            <option value="futbol5">Fútbol 5</option>
+                            <option value="futbol8">Fútbol 8</option>
+                            <option value="tenis">Tenis</option>
+                            <option value="paddle">Paddle</option>
+                        </select>
+                    </div>
+                    <div class="formReserva__dia">
+                        <label for="dia">Día</label>
+                        <input class="formReserva__input" type="date" name="dia" id="dia" required min="2021-06-30" max="2021-07-31">
+                    </div>
+                    <div class="formReserva__hora">
+                        <label for="hora">Horario</label>
+                        <select class="formReserva__input" name="hora" id="hora">
+                            <option value="11">10 Hs</option>
+                            <option value="11">11 Hs</option>
+                            <option value="11">12 Hs</option>
+                            <option value="11">13 Hs</option>
+                            <option value="11">14 Hs</option>
+                            <option value="11">15 Hs</option>
+                            <option value="11">16 Hs</option>
+                            <option value="11">17 Hs</option>
+                            <option value="11">18 Hs</option>
+                            <option value="11">19 Hs</option>
+                            <option value="11">20 Hs</option>
+                            <option value="11">21 Hs</option>
+                            <option value="11">22 Hs</option>
+                            <option value="11">23 Hs</option>
+                            <option value="11">00 Hs</option>
+                        </select>
+                    </div>
+                    <div class="formReserva__terms">
+                        <label for="terms">Acepto los terminos y condiciones</label>
+                        <input type="checkbox" name="terms" required >
+                    </div>
+                    <div class="formReserva__boton">
+                        <input class="formReserva__botonEstilo" type="submit" value="Confirmar reserva">
+                    </div>
+                </form>
+            </div>
+
+            <article class="paginaReservas__condiciones">
+                <ul>
+                    <li>Todos los turnos son de 1 hora.</li>
+                    <li>Es necesario abonar una seña del 50% del valor de la cancha, recibirás en tu correo electrónico información sobre los medio de pago aceptados</li>
+                </ul>
+            </article>
+        </section>
+
+        <!--Seccion precios-->
+        <section id="sectionPrecios" class="textoGeneral">
+            <h2>Precio de las canchas</h2>        
+            <!--Tabla de precios-->
+            <div class="precios">
+                <table class="precios__tabla">
+                    <tr>
+                        <th>Fútbol 5</th>
+                        <th>Domingo a Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+
+                    </tr>
+                    <tr>
+                        <td>10 a 18Hs</td>
+                        <td>$ 3.200</td>
+                        <td>$ 3.200</td>
+                        <td>$ 3.500</td>
+                    </tr>
+                    <tr>
+                        <td>Desde 19hs</td>
+                        <td>$ 3.800</td>
+                        <td>$ 4.300</td>
+                        <td>$ 4.300</td>
+                    </tr>
+                </table>
+                <table class="precios__tabla">
+                    <tr>
+                        <th>Fútbol 8</th>
+                        <th>Domingo a Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>10 a 18Hs</td>
+                        <td>$ 4.500</td>
+                        <td>$ 4.500</td>
+                        <td>$ 5.000</td>
+                    </tr>
+                    <tr>
+                        <td>Desde 19hs</td>
+                        <td>$ 5.500</td>
+                        <td>$ 6.000</td>
+                        <td>$ 6.000</td>
+                    </tr>
+                </table>
+                <table class="precios__tabla">
+                    <tr>
+                        <th>Tenis</th>
+                        <th>Domingo a Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>10 a 18Hs</td>
+                        <td>$ 900</td>
+                        <td>$ 900</td>
+                        <td>$ 1.100</td>
+                    </tr>
+                    <tr>
+                        <td>Desde 19hs</td>
+                        <td>$ 1.200</td>
+                        <td>$ 1.400</td>
+                        <td>$ 1.400</td>
+                    </tr>
+                </table>
+                <table class="precios__tabla">
+                    <tr>
+                        <th>Paddle</th>
+                        <th>Domingo a Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tr>
+                        <td>10 a 18Hs</td>
+                        <td>$ 900</td>
+                        <td>$ 900</td>
+                        <td>$ 1.100</td>
+                    </tr>
+                    <tr>
+                        <td>Desde 19hs</td>
+                        <td>$ 1.200</td>
+                        <td>$ 1.400</td>
+                        <td>$ 1.400</td>
+                    </tr>
+                </table>
+            </div>     
+        </section>
+    </main>
+
+    <footer>
+        <h5>Seguinos en nuestras redes</h5>
+        <div>
+            <a href="https://www.linkedin.com/" target="blank">
+                <img src="../imagenes/linkedin_logo.png" alt="Icono Linkedin" class="redes">
+            </a>
+            <a href="https://www.instagram.com/" target="blank">
+                <img src="../imagenes/instagram_logo.png" alt="Icono Instagram" class="redes">
+            </a>
+            <a href="https://www.facebook.com/" target="blank">
+                <img src="../imagenes/facebook_logo.png" alt="Icono Facebook" class="redes">
+            </a>
+            <a href="https://www.twitter.com/" target="blank">
+                <img src="../imagenes/twitter_logo.png" alt="Icono Twitter" class="redes">
+            </a>
+        </div>
+        <p>Copyright 2021 Amsterdam Deportes</p>
+    </footer>
+
+    <!--Script WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+    <!-- Scrips Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

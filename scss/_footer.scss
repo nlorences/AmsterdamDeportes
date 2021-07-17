@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.3rem;
+    color: #000000;
+    background:rgba(0, 0, 0, 0.520);
+    h5{
+        margin-bottom: 0rem;
+    }
+    .redes{
+        width: 1.8rem;
+        margin: 0rem .25rem 0rem .25rem  
+    }
+    p{
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 488px){
+    footer{
+        h5{
+            font-size: .9rem;
+        }
+        .redes{
+            width: 1.2rem;
+        }
+        p {
+            font-size: .8rem;
+        }
+    }
+}

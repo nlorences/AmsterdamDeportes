@@ -28,6 +28,13 @@
         @include flexHome();
         .sectPredio__derecha{
             @include ubicacion(2);
+            .sectPredio__link{
+                transition: all .4s;
+                &:hover{
+                    color: $colorVerde;
+                    font-size: 1.8rem;
+                }
+            }
         }
         .sectPredio__izquierda{
             @include ubicacion(1);
@@ -39,9 +46,17 @@
 }
 .sectReservas{
     background-color: $colorCeleste;
-    .sectReservas__link{
+    .sectReservas__titulo{
         width: 75vw;
         margin: 0 auto;
+        .sectReservas__link{
+            transition: all .4s;
+            &:hover{
+                color: $colorVerde;
+                font-size: 4rem;
+            }
+        
+        }
     }
     .sectReservas__flex{
         display: flex;

@@ -19,6 +19,7 @@ header{
             li .navSeccion{
                 font-size: 1.4rem;
                 color: $colorCeleste !important;
+                transition: all .6s;
                 &:visited{
                     font-size: 1.4rem;
                     color: $colorCeleste !important;

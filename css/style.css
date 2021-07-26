@@ -76,7 +76,7 @@ header {
       transition: all .4s; }
       .sectReservas .sectReservas__titulo .sectReservas__link:hover {
         color: #A0CE4E;
-        font-size: 4rem; }
+        font-size: 3.5rem; }
   .sectReservas .sectReservas__flex {
     display: flex;
     flex-flow: row wrap;
@@ -122,7 +122,8 @@ header {
     align-items: center;
     padding-bottom: 2.1rem;
     max-width: 90vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    align-items: flex-start; }
     .sectContacto .sectContacto__flex .sectContacto__ubicacion {
       display: flex;
       flex-flow: column nowrap;
@@ -139,31 +140,33 @@ header {
       padding-bottom: 1.4rem;
       margin-left: 1.3rem;
       margin-right: 1.3rem; }
-      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid {
-        display: grid;
-        grid-template-columns: 5rem 18rem;
-        grid-template-rows: auto; }
-        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid .sectContacto__input {
+      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form {
+        margin-bottom: .8rem; }
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__grid {
+          display: grid;
+          grid-template-columns: 5rem 18rem;
+          grid-template-rows: auto; }
+          .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__grid .sectContacto__input {
+            width: 100%;
+            height: 90%;
+            border: black solid .1rem;
+            border-radius: .3rem; }
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__textarea {
           width: 100%;
-          height: 90%;
+          height: 10rem;
           border: black solid .1rem;
           border-radius: .3rem; }
-      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__textarea {
-        width: 100%;
-        height: 10rem;
-        border: black solid .1rem;
-        border-radius: .3rem; }
-      .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__boton {
-        width: 7rem;
-        height: 2rem;
-        font-family: 'Archivo Narrow', sans-serif;
-        font-size: 1.1rem;
-        font-weight: bold;
-        border: solid #000000 2px;
-        border-radius: .4rem;
-        transition: all .4s; }
-        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__boton:hover {
-          background-color: #A0CE4E; }
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton {
+          width: 7rem;
+          height: 2rem;
+          font-family: 'Archivo Narrow', sans-serif;
+          font-size: 1.1rem;
+          font-weight: bold;
+          border: solid #000000 2px;
+          border-radius: .4rem;
+          transition: all .4s; }
+          .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton:hover {
+            background-color: #A0CE4E; }
       .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__datos {
         font-weight: lighter;
         font-size: 1.4rem;
@@ -177,20 +180,26 @@ header {
     height: 12rem; }
   .sectPredio .sectPredio__flex .sectPredio__derecha {
     padding-top: 1rem; }
-  .sectReservas h2, .sectReservas h3 {
+  .sectReservas .sectReservas__titulo {
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-size: 1.7rem; }
-  .sectReservas .sectReservas__link a {
-    color: #A0CE4E; }
+    .sectReservas .sectReservas__titulo .sectReservas__link {
+      color: #A0CE4E; }
+      .sectReservas .sectReservas__titulo .sectReservas__link:hover {
+        font-size: 1.8rem; }
   .sectReservas .sectReservas__icono {
     display: none; }
+  .sectReservas h3 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1.7rem; }
   .sectContacto .sectContacto__flex .sectContacto__mensaje {
     padding-bottom: 0rem; }
-    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__grid {
+    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__grid {
       grid-template-columns: 30% 70%;
       width: 80vw; }
-    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__boton {
+    .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton {
       width: 4.25rem;
       height: 1.5rem;
       font-size: .8rem;
@@ -307,7 +316,8 @@ footer {
     justify-content: center;
     padding-bottom: 1rem;
     max-width: 85vw;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: justify; }
 
 .precios {
   display: column;

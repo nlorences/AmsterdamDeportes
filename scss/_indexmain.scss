@@ -53,7 +53,7 @@
             transition: all .4s;
             &:hover{
                 color: $colorVerde;
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
         
         }
@@ -88,6 +88,7 @@
     background-color: $colorCeleste;
     .sectContacto__flex{
         @include flexHome();
+        align-items: flex-start;
         .sectContacto__ubicacion{
             display: flex;
             flex-flow: column nowrap;
@@ -106,20 +107,25 @@
             padding-bottom: $espaciado;
             margin-left: 1.3rem;
             margin-right: 1.3rem;
-            .sectContacto__grid{
-                display: grid;
-                grid-template-columns: 5rem 18rem;
-                grid-template-rows: auto;
-                .sectContacto__input{
-                    @include campoFormulario (90%);
+            .sectContacto__form{
+                margin-bottom: .8rem;
+
+            
+                .sectContacto__grid{
+                    display: grid;
+                    grid-template-columns: 5rem 18rem;
+                    grid-template-rows: auto;
+                    .sectContacto__input{
+                        @include campoFormulario (90%);
+                    }
+                }
+                .sectContacto__textarea{
+                    @include campoFormulario (10rem);
+                }
+                .sectContacto__boton{
+                    @include botones(7rem);
                 }
             }
-            .sectContacto__textarea{
-                @include campoFormulario (10rem);
-           }
-           .sectContacto__boton{
-                @include botones(7rem);
-           }
            .sectContacto__datos{
             font-weight: lighter;
             font-size: 1.4rem;
@@ -144,31 +150,41 @@
         }
     }
     .sectReservas{
-        h2,h3{
+        .sectReservas__titulo{
             padding-top: .5rem;
             padding-bottom: .5rem;
             font-size: 1.7rem;
-        }
-        .sectReservas__link a{
-            color: $colorVerde;
+            .sectReservas__link{
+                color: $colorVerde;
+                &:hover{
+                    font-size: 1.8rem;
+                }
+            }
         }
         .sectReservas__icono{
             display: none;
+        }
+        h3{
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            font-size: 1.7rem;
         }
     }
     .sectContacto{
         .sectContacto__flex{
             .sectContacto__mensaje{
                 padding-bottom: 0rem;
-                .sectContacto__grid{
-                    grid-template-columns: 30% 70%;
-                    width: 80vw;
-                }
-                .sectContacto__boton{
-                    width: 4.25rem;
-                    height: 1.5rem;
-                    font-size: .8rem;
-                    border: solid #000000 1px;
+                .sectContacto__form{                
+                    .sectContacto__grid{
+                        grid-template-columns: 30% 70%;
+                        width: 80vw;
+                    }
+                    .sectContacto__boton{
+                        width: 4.25rem;
+                        height: 1.5rem;
+                        font-size: .8rem;
+                        border: solid #000000 1px;
+                    }
                 }
                 .sectContacto__datos{
                     font-size: 1rem;

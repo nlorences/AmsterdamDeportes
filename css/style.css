@@ -156,7 +156,7 @@ header {
           height: 10rem;
           border: black solid .1rem;
           border-radius: .3rem; }
-        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton {
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton-enviar {
           width: 7rem;
           height: 2rem;
           font-family: 'Archivo Narrow', sans-serif;
@@ -165,8 +165,19 @@ header {
           border: solid #000000 2px;
           border-radius: .4rem;
           transition: all .4s; }
-          .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton:hover {
+          .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton-enviar:hover {
             background-color: #A0CE4E; }
+        .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton-borrar {
+          width: 7rem;
+          height: 2rem;
+          font-family: 'Archivo Narrow', sans-serif;
+          font-size: 1.1rem;
+          font-weight: bold;
+          border: solid #000000 2px;
+          border-radius: .4rem;
+          transition: all .4s; }
+          .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__form .sectContacto__boton-borrar:hover {
+            background-color: #d41c1c; }
       .sectContacto .sectContacto__flex .sectContacto__mensaje .sectContacto__datos {
         font-weight: lighter;
         font-size: 1.4rem;
@@ -319,6 +330,9 @@ footer {
     margin: 0 auto;
     text-align: justify; }
 
+.formReserva__termsLabel {
+  cursor: pointer; }
+
 .precios {
   display: column;
   flex-flow: row nowrap;
@@ -334,6 +348,13 @@ footer {
     .precios .precios__tabla tr th {
       width: 10rem;
       border-bottom: solid 0.1px #e7e3e3; }
+
+@media only screen and (max-width: 488px) {
+  .paginaReservas .contenedorForm .formReserva .formReserva__boton .formReserva__botonEstilo {
+    width: 7rem;
+    height: 1.5rem;
+    font-size: .8rem;
+    border: solid #000000 1px; } }
 
 .sectImagenes {
   background-color: #00a0de; }
@@ -390,7 +411,7 @@ h2, h3 {
   font-family: 'Archivo Narrow', sans-serif;
   color: #000000; }
 
-/* Media Queries */
+/* Media Queries generales */
 @media only screen and (min-width: 1800px) {
   body {
     width: 75vw;

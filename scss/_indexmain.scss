@@ -109,8 +109,6 @@
             margin-right: 1.3rem;
             .sectContacto__form{
                 margin-bottom: .8rem;
-
-            
                 .sectContacto__grid{
                     display: grid;
                     grid-template-columns: 5rem 18rem;
@@ -122,8 +120,11 @@
                 .sectContacto__textarea{
                     @include campoFormulario (10rem);
                 }
-                .sectContacto__boton{
-                    @include botones(7rem);
+                .sectContacto__boton-enviar{
+                    @include botones(enviar, 7rem);
+                }
+                .sectContacto__boton-borrar{
+                    @include botones(borrar, 7rem);
                 }
             }
            .sectContacto__datos{

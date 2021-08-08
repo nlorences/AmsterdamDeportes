@@ -3,6 +3,7 @@ $colorGris: #e7e3e3;
 $colorCeleste: #00a0de;
 $colorVerde: #A0CE4E;
 $colorGrisOscuro: #00000085;
+$colorRojo: #d41c1c;
 
 //Medidas
 //alto del logo menu navegacion.
@@ -26,7 +27,7 @@ $espaciado: 1.4rem;
     max-width: 80vw
 }
 //Estilo para los botones
-@mixin botones($width) {
+@mixin botones($tipo, $width) {
     width: $width;
     height: 2rem;
     font-family: 'Archivo Narrow', sans-serif;
@@ -36,7 +37,13 @@ $espaciado: 1.4rem;
     border-radius: .4rem;
     transition: all .4s;
     &:hover{
-        background-color: $colorVerde;
+        @if $tipo == enviar {
+            background-color: $colorVerde;
+        } @else if $tipo == borrar {
+            background-color: $colorRojo;
+        } @else {
+            background-color: $colorGris;
+        }
         
     }
 }

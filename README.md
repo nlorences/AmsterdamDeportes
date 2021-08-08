@@ -9,4 +9,4 @@ La tematica elegida es de un predio de deportes que ofrece canchas de alquiler, 
 El sitio esta estructurado con 5 secciones en el Index y 2 paginas adicionales. 
 
 Nicolas Lorences
-Julio de 2021.
+Agosto de 2021.
